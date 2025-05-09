@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa Interactivo de Provincias</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <h1>Mapa Interactivo de las Provincias</h1>
+  <p>Haz clic sobre una provincia para ver más información.</p>
+
+  <div class="contenedor-mapa">
+    <img src="mapa-republica-dominicana.jpg" alt="Mapa RD" usemap="#mapaRD">
+
+    <map name="mapaRD">
+      <area shape="poly" coords="622,349,630,375,671,372,680,346,659,314" alt="La Romana" data-provincia="laromana" href="javascript:void(0);" onclick="abrirProvincia(this)">
+      <area shape="poly" coords="339,65,354,81,317,117,277,102,235,85,173,52,219,28" alt="Puerto Plata" data-provincia="puerto-plata" href="javascript:void(0);" onclick="abrirProvincia(this)">
+    </map>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
