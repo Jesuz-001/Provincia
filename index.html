@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa Interactivo de Provincias</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <h1>Mapa Interactivo de las Provincias</h1>
+  <p>Haz clic sobre una provincia para ver más información.</p>
+
+  <div class="contenedor-mapa">
+    <img src="mapa-republica-dominicana.jpg" alt="Mapa RD" usemap="#mapaRD">
+
+    <map name="mapaRD">
+      <area shape="poly" coords="622,349,630,375,671,372,680,346,659,314" alt="La Romana" data-provincia="laromana" href="javascript:void(0);" onclick="abrirProvincia(this)">
+      <area shape="poly" coords="339,65,354,81,317,117,277,102,235,85,173,52,219,28" alt="Puerto Plata" data-provincia="puerto-plata" href="javascript:void(0);" onclick="abrirProvincia(this)">
+     
+      <!-- Provincias de Leandro -->
+       
+   <area shape="poly" coords="52,320,48,305,98,314,90,343,57,335,68,353,121,369,154,369,174,400,133,398,139,420,126,424,69,398,28,358,6,315,34,320" alt="Independencia"
+        data-provincia="https://david-jones127.github.io/Provincia/independencia" href="javascript:void(0);" onclick="abrirProvincia(this)">
+    
+        <area shape="poly" coords="333,164,308,152,312,133,320,126,326,112,332,103,341,90,359,85,417,101,389,123,355,116,339,142,338,156" alt="Espaillat"
+           data-provincia="https://david-jones127.github.io/Provincia/espaillat" href="javascript:void(0);" onclick="abrirProvincia(this)">
+   
+        <!-- Provincias de Jael -->
+
+        <area shape="poly" coords="72,512,78,472,59,448,52,417,65,397,111,419,138,438,127,466,161,486,147,508,128,553,106,513" alt="Pedernales"
+        data-provincia="https://jazzz-z.github.io/Proyecto-de-provincias-/Pedernales" href="javascript:void(0);" onclick="abrirProvincia(this)">
+
+        <area shape="poly" coords="423,149,408,136,397,120,418,103,419,91,440,84,462,100,456,116,461,131,473,162,487,182,479,192,435,176,430,167,416,161" alt="Maria Trinidad Sanchez"
+        data-provincia="https://jazzz-z.github.io/Proyecto-de-provincias-/maria-trinidad" href="javascript:void(0);" onclick="abrirProvincia(this)">
+
+
+
+    </map>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
