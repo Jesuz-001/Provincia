@@ -73,6 +73,13 @@
   </footer>
 
   <script>
+      const map = L.map('map').setView([18.43, -68.97], 10); // Coordenadas aproximadas de La Romana
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([18.43, -68.97]).addTo(map)
+      .bindPopup('La Romana, República Dominicana')
+      .openPopup();
   // Animación al hacer scroll
   const sections = document.querySelectorAll('.section');
   const observer = new IntersectionObserver(entries => {
