@@ -68,18 +68,16 @@
     </ul>
   </section>
 
+  <section id="mapa">
+    <h2>Mapa Interactivo</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.5309575702253!2d-68.9728122!3d18.4301803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea8930b1a6d9277%3A0x4d9f92d6b8a4a9ef!2sLa%20Romana!5e0!3m2!1ses!2sdo!4v1620654213059!5m2!1ses!2sdo" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
   <footer class="footer">
     <p>Hecho con ❤️ para el estudio de la República Dominicana.</p>
   </footer>
 
   <script>
-      const map = L.map('map').setView([18.43, -68.97], 10); // Coordenadas aproximadas de La Romana
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-    L.marker([18.43, -68.97]).addTo(map)
-      .bindPopup('La Romana, República Dominicana')
-      .openPopup();
   // Animación al hacer scroll
   const sections = document.querySelectorAll('.section');
   const observer = new IntersectionObserver(entries => {
