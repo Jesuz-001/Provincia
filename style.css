@@ -125,6 +125,10 @@ a:hover {
   font-weight: bold;
 }
 
+.mapa {
+   padding: 20px;
+}
+
 /* Footer */
 .footer {
   text-align: center;
