@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa Interactivo de Provincias</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <h1>Mapa Interactivo de las Provincias</h1>
+  <p>Haz clic sobre una provincia para ver más información.</p>
+
+  <div class="contenedor-mapa">
+    <img src="mapa-republica-dominicana.jpg" alt="Mapa RD" usemap="#mapaRD">
+
+    <map name="mapaRD">
+      <!-- Provincias con nombre en atributo data-provincia -->
+      <area shape="poly" coords="183, 322, 213, 290, 223,260, 252, 236, 274, 287, 286, 290, 286, 308, 291, 329, 303, 342, 326, 357, 329, 373, 328, 393, 308, 398, 304, 369, 282,
+      372, 285,385, 230,405, 211, 377, 222, 354, 221,342" alt="Azua"
+        data-provincia="azua" href="javascript:void(0);" onclick="abrirProvincia(this)">
+      <!-- Agrega más provincias aquí con sus coordenadas -->
+
+       <area shape="poly" coords="380,271,429,317,462,308,568,264,501,230,487,217,456,229,442,266,417,266" alt="Monte Pata"
+        data-provincia="monte-plata" href="javascript:void(0);" onclick="abrirProvincia(this)">
+
+         <area shape="poly" coords="381,371,354,337,359,303,396,297,409,343,432,364,430,375,400,411,382,389" alt="San Cristobal"
+        data-provincia="san-cristobal" href="javascript:void(0);" onclick="abrirProvincia(this)">
+
+    </map>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
